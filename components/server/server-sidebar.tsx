@@ -68,7 +68,7 @@ export const ServerSidebar = async ({ serverId }: ServerSidebarProps) => {
     [MemberRole.MODERATOR]: (
       <ShieldCheck className="mr-2 h-4 w-4 text-indigo-500" />
     ),
-    [MemberRole.ADMIN]: <ShieldAlert className="mr-2 h-4 w-4" />,
+    [MemberRole.ADMIN]: <ShieldAlert className="mr-2 h-4 w-4 text-rose-500" />,
   };
 
   if (!server) {
