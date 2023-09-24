@@ -24,8 +24,6 @@ export const DeleteChannelModal = () => {
   const isModalOpen = isOpen && type === "deleteChannel";
   const { server, channel } = data;
 
-  console.log(channel);
-
   const [isLoading, setIsLoading] = useState(false);
 
   const onClick = async () => {
