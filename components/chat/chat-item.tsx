@@ -26,7 +26,7 @@ interface ChatItemProps {
     profile: Profile;
   };
   timestamp: string;
-  fileUrl: string | undefined;
+  fileUrl: string | null;
   deleted: boolean;
   currentMember: Member;
   isUpdated: boolean;
@@ -166,7 +166,7 @@ export const ChatItem = ({
             <div className="relative flex items-center p-2 mt-2 rounded-md bg-background/10">
               <FileIcon className="h-10 w-10 fill-indigo-200 stroke-indigo-400" />
               <a
-                href={fileUrl}
+                href={fileUrl!}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ml-2 text-sm dark:text-indigo-400 hover:underline"
